@@ -100,6 +100,14 @@ Outputs:
 - Coding and productivity terms tend to skew more positive, while privacy, misinformation, job loss, and education policy terms often skew more negative or cautious.
 - Country-level sentiment can reveal different adoption patterns and policy concerns.
 
+## Screenshots
+
+> Chart and dashboard screenshots have not been added yet. After running the pipeline, exported charts will land in `images/generated/` — add them there and reference them here, e.g.:
+>
+> ```markdown
+> ![Sentiment Trend](images/generated/sentiment_trend.png)
+> ```
+
 ## Dashboard Preview
 
 The Power BI plan is available in `dashboard/powerbi_dashboard_plan.md`. After generating outputs, use `data/cleaned/chatgpt_tweets_featured.csv` as the main fact table.
@@ -111,4 +119,3 @@ The Power BI plan is available in `dashboard/powerbi_dashboard_plan.md`. After g
 - Build a topic model with BERTopic or LDA.
 - Add anomaly detection for tweet spike events.
 - Deploy a Streamlit dashboard for public portfolio viewing.
-
