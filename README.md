@@ -24,6 +24,26 @@ ChatGPT created a sudden global conversation around productivity, education, cod
 
 The raw CSV is intentionally ignored by Git because it is large. Place the Kaggle export in `data/raw/` before running the pipeline.
 
+### CSV Schema
+
+The pipeline maps common tweet export columns into its analysis schema before cleaning.
+For the tweet body, use one of these column names:
+
+- `tweet`
+- `text`
+- `content`
+- `full_text`
+
+Optional metadata columns are also detected when present:
+
+- Dates: `date`, `created_at`, `tweet_created`, `timestamp`
+- Users: `user`, `username`, `screen_name`, `author`
+- Countries: `country`, `user_location`, `location`
+- Language: `language`, `lang`
+
+This lets the same workflow analyze the Kaggle export or a smaller CSV exported from
+tools such as TweetClaw without editing the code.
+
 ## Project Structure
 
 ```text
